@@ -11,47 +11,22 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
     <title>Fortis-demomap</title>
-    <script>
-        window.onload = function () {
-            const host = window.location.host;
-            let path = window.location.pathname;
-            if (path.endsWith('index.html')) {
-                path = path.substr(path, path.length - 'index.html'.length);
-            }
-            const instanceId = Math.random().toString(36).substring(2, 15);
-            const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}maps/demomap.json`;
-            document.getElementById('testMapURL').href = url;
-            document.getElementById('testMapBtnURL').href = url;
-            document.getElementById('testMapURL').innerText = url;
-
-            const jsonURL = window.location.protocol + '//' + window.location.host + path + 'maps/demomap.json';
-            document.getElementById('jsonURL').innerText = jsonURL;
-
-            const gettingStartedLink = 'https://workadventu.re/getting-started?name=Map&mapUrl=' + jsonURL;
-            document.getElementById('gettingStartedLink').href = gettingStartedLink;
-
-
-
-
-        };
-</script>
 <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header>
-    </header>
     <main>
         
         <div class="nes-container with-title " style="margin: 1rem">
             <div class="logo">
                 <h1>Fortis demo event</h1>
             </div>
-            <p>You can test this map at <a id="testMapURL" href="" class="url"></a></p>
+            <p style="display:none;">You can test this map at <a id="testMapURL" href="" class="url"></a></p>
             <p><a id="testMapBtnURL" href="" class="nes-btn is-primary">Test this map</a></p>
         </div>
 
     </main>
+    <script src="src//home.js"></script>
 </body>
 
 </html>

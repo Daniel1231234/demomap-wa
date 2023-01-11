@@ -11,21 +11,7 @@
         font-weight: bold;
     }
 
-    header {
-        margin: 30px;
-    }
 
-    header .logo {
-        display: block;
-        position: relative;
-    }
-
-    header .logo img {
-        display: block;
-        width: 500px;
-        margin: auto;
-        text-align: center;
-    }
 
     main {
         margin-bottom: 30px;
@@ -117,9 +103,7 @@
     }
 
 
-    /*/ MEDIA QUERIES START HERE /*/
-    @media (max-width: 768px) {
-        /* Hand Held Device */
+                @media (max-width: 768px) {
 
         body {
             font-size: 13px;
