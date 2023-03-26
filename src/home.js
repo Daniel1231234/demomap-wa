@@ -1,6 +1,7 @@
 window.onload = function () {
   const host = window.location.host
   let path = window.location.pathname
+  console.log(path)
   if (path.endsWith("index.html")) {
     path = path.substr(path, path.length - "index.html".length)
   }
@@ -10,15 +11,11 @@ window.onload = function () {
   document.getElementById("testMapBtnURL").href = url
   document.getElementById("testMapURL").innerText = url
 
-  const jsonURL =
-    window.location.protocol +
-    "//" +
-    window.location.host +
-    path +
-    "maps/demomap.json"
-  // document.getElementById('jsonURL').innerHTML = jsonURL;
-
-  // const gettingStartedLink =
-  //   "https://workadventu.re/getting-started?name=Map&mapUrl=" + jsonURL
-  // document.getElementById("gettingStartedLink").href = gettingStartedLink
+  // const jsonURL =
+  //   window.location.protocol +
+  //   "//" +
+  //   window.location.host +
+  //   path +
+  //   "maps/demomap.json"
+  // document.getElementById("jsonURL").innerHTML = jsonURL
 }
